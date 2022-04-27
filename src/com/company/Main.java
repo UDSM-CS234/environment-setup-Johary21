@@ -7,8 +7,9 @@ public class Main {
         double initialVelocity = 0.0;
         double fallingTime = 10.0;
         double initialPosition = 0.0;
+        double position = 0.5 * gravity* fallingTime*fallingTime + initialVelocity*fallingTime + initialPosition;
         double finalPosition = 0.0;
         System.out.println("The object's position after " + fallingTime +
-                " seconds is " + finalPosition + " m.");
+                " seconds is " + position + " m.");
     }
 }
